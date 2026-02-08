@@ -54,6 +54,7 @@ Until automation is set up: check Dodo Dashboard for new sales, copy buyer email
 
 ## Assets
 
-Add to `assets/`:
-- `og-image.png` — 1200×630 for social shares
-- `favicon.ico` — site favicon
+- `assets/favicon.svg` — Site favicon (W on dark background)
+- `assets/og-image.png` — 1200×630 for social shares (Twitter, LinkedIn, etc.)
+
+To replace the OG image: create a 1200×630 PNG with headline "From idea to first dollar" + WannaShip.fyi branding. Dark background (#18181b), amber accent (#f59e0b).
