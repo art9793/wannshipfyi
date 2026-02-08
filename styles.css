@@ -1,0 +1,12 @@
+/* WannaShip.fyi — Custom styles */
+
+/* Smooth focus for accessibility */
+a:focus-visible {
+  outline: 2px solid rgb(251 191 36 / 0.6);
+  outline-offset: 2px;
+}
+
+/* Ensure font-display class applies */
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}

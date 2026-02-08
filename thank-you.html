@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>You're in! — WannaShip.fyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-display antialiased min-h-screen flex items-center justify-center px-6">
+  <main class="max-w-md w-full text-center">
+    <div class="mb-8">
+      <span class="inline-block text-5xl" aria-hidden="true">🎉</span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-bold">You're in!</h1>
+    <p class="mt-4 text-zinc-400">Your purchase is complete. Your playbook is ready.</p>
+    <!-- Replace href with your Notion template link -->
+    <a href="https://notion.so/placeholder" id="notion-link" class="inline-flex items-center justify-center mt-10 w-full px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition-colors duration-200">
+      Access Your Database
+    </a>
+    <p class="mt-8 text-sm text-zinc-500">Check your email for the receipt from Dodo Payments.</p>
+  </main>
+</body>
+</html>
