@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="50 startup ideas with real revenue proof — plus build guides and where to find customers. Stop guessing. From idea to first dollar.">
+  <meta name="theme-color" content="#09090b">
   <meta property="og:title" content="WannaShip.fyi — From idea to first dollar">
   <meta property="og:description" content="50 startup ideas with real revenue proof — plus build guides and where to find customers. Stop guessing. From idea to first dollar.">
   <meta property="og:image" content="https://wannaship.fyi/assets/og-image.png">
@@ -66,126 +67,482 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-zinc-950 text-zinc-100 font-display antialiased">
-  <!-- Header -->
+
+  <!-- 1. Fixed Header -->
   <header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-sm">
-    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="/" class="font-semibold text-zinc-100 hover:text-amber-400 transition-colors">WannaShip.fyi</a>
-      <a href="https://pay.dodopayments.com/placeholder" class="text-sm font-medium text-amber-400 hover:text-amber-300">Get the Playbook</a>
+      <a href="https://pay.dodopayments.com/placeholder" id="cta-header" class="text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors">Get the Playbook — $49</a>
     </div>
   </header>
-  <!-- Sticky CTA (shows after scroll) -->
+
+  <!-- 2. Sticky Bottom Bar -->
   <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-40 translate-y-full transition-transform duration-300 border-t border-zinc-800 bg-zinc-950/95 backdrop-blur-sm">
-    <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-zinc-300">50 ideas. $49. One-time.</p>
-      <a href="https://pay.dodopayments.com/placeholder" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition-colors">Get the Playbook</a>
+    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-zinc-300">50 validated ideas + build playbooks. <span class="text-amber-400 font-medium">$49 one-time.</span></p>
+      <a href="https://pay.dodopayments.com/placeholder" id="cta-sticky" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">Get the Playbook</a>
     </div>
   </div>
-  <main class="min-h-screen">
-    <!-- Hero -->
-    <section class="relative overflow-hidden px-6 pt-24 pb-24 sm:pt-32 sm:pb-32">
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(251,191,36,0.08),transparent)]"></div>
-      <div class="relative max-w-3xl mx-auto text-center">
-        <p class="font-mono text-amber-400/90 text-sm tracking-wider uppercase mb-6">Stop building the wrong thing</p>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-          From idea to first dollar.
-        </h1>
-        <p class="mt-6 text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-          50 startup ideas with <span class="text-zinc-200">real revenue proof</span> — plus exactly how to build each one and where to find customers. No more guessing.
-        </p>
-        <!-- Replace href with your Dodo Payments checkout link -->
-        <a href="https://pay.dodopayments.com/placeholder" id="cta-main" title="Instant access after payment" class="inline-flex items-center justify-center mt-10 px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition-colors duration-200">
-          Get the 50 Ideas — $49
-        </a>
-        <p class="mt-4 text-sm text-zinc-500">One-time. No subscription. Instant access.</p>
-      </div>
-    </section>
 
-    <!-- What You Get -->
-    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-14">Everything you need to stop guessing</h2>
-        <div class="grid sm:grid-cols-3 gap-8 sm:gap-10">
-          <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/50">
-            <span class="font-mono text-amber-400/80 text-sm">01</span>
-            <h3 class="mt-3 font-semibold text-lg">Ideas that actually make money</h3>
-            <p class="mt-2 text-sm text-zinc-400">50 ideas with verified revenue — so you don't waste 3 months building something no one buys.</p>
-          </div>
-          <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/50">
-            <span class="font-mono text-amber-400/80 text-sm">02</span>
-            <h3 class="mt-3 font-semibold text-lg">Build guides for every skill level</h3>
-            <p class="mt-2 text-sm text-zinc-400">No-code, AI-assisted, or full-stack. Can't code? Every idea has a path that works.</p>
-          </div>
-          <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/50">
-            <span class="font-mono text-amber-400/80 text-sm">03</span>
-            <h3 class="mt-3 font-semibold text-lg">Where to find customers</h3>
-            <p class="mt-2 text-sm text-zinc-400">Exact subreddits, communities, and cold DM scripts — not vague "do marketing" advice.</p>
+  <main class="min-h-screen">
+
+    <!-- 3. HERO — Split layout -->
+    <section id="hero" class="relative overflow-hidden px-6 pt-24 pb-20 sm:pt-32 sm:pb-28">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(251,191,36,0.12),transparent)]"></div>
+      <div class="relative max-w-5xl mx-auto grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        <!-- Copy — left 3/5 -->
+        <div class="lg:col-span-3 text-center lg:text-left">
+          <p class="font-mono text-amber-400/90 text-sm tracking-wider uppercase mb-6">Stop scrolling Reddit for ideas</p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+            50 startup ideas that already make money.
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-zinc-400 max-w-2xl leading-relaxed">
+            Each one comes with the build guide, pricing strategy, and exact channels to find your first customers. <span class="text-zinc-200">Stop guessing. Start shipping.</span>
+          </p>
+          <a href="https://pay.dodopayments.com/placeholder" id="cta-hero" class="inline-flex items-center justify-center mt-10 px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">
+            Get 50 Validated Ideas — $49
+          </a>
+          <p class="mt-4 text-sm text-zinc-500">Instant access via email. No subscription. Yours forever.</p>
+        </div>
+        <!-- Product mockup — right 2/5 -->
+        <div class="lg:col-span-2 flex justify-center">
+          <div class="animate-float w-full max-w-sm rounded-xl border border-amber-400/20 bg-zinc-900/80 shadow-lg shadow-amber-400/5 overflow-hidden">
+            <div class="px-4 py-3 border-b border-zinc-800/80 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500/60"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500/60"></span>
+              <span class="ml-2 text-xs text-zinc-500 font-mono">WannaShip Playbook</span>
+            </div>
+            <div class="px-4 py-3">
+              <!-- Table header -->
+              <div class="grid grid-cols-12 gap-2 text-[10px] font-mono text-zinc-500 uppercase tracking-wider pb-2 border-b border-zinc-800/50">
+                <div class="col-span-4">Name</div>
+                <div class="col-span-2">MRR</div>
+                <div class="col-span-2">Build</div>
+                <div class="col-span-2">Type</div>
+                <div class="col-span-2">Fresh</div>
+              </div>
+              <!-- Visible row 1 -->
+              <div class="grid grid-cols-12 gap-2 text-xs py-2.5 border-b border-zinc-800/30">
+                <div class="col-span-4 text-zinc-200 truncate">PDF Invoice Gen</div>
+                <div class="col-span-2 text-green-400 font-mono">$5K</div>
+                <div class="col-span-2 text-zinc-400">2 wks</div>
+                <div class="col-span-2"><span class="px-1.5 py-0.5 text-[10px] rounded bg-blue-500/10 text-blue-400">SaaS</span></div>
+                <div class="col-span-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-green-400"></span></div>
+              </div>
+              <!-- Visible row 2 -->
+              <div class="grid grid-cols-12 gap-2 text-xs py-2.5 border-b border-zinc-800/30">
+                <div class="col-span-4 text-zinc-200 truncate">AI Brand Tracker</div>
+                <div class="col-span-2 text-green-400 font-mono">$20K</div>
+                <div class="col-span-2 text-zinc-400">5 wks</div>
+                <div class="col-span-2"><span class="px-1.5 py-0.5 text-[10px] rounded bg-purple-500/10 text-purple-400">API</span></div>
+                <div class="col-span-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-green-400"></span></div>
+              </div>
+              <!-- Blurred rows -->
+              <div class="row-blur">
+                <div class="grid grid-cols-12 gap-2 text-xs py-2.5 border-b border-zinc-800/30">
+                  <div class="col-span-4 text-zinc-200">LinkedIn Tool</div>
+                  <div class="col-span-2 text-green-400 font-mono">$62K</div>
+                  <div class="col-span-2 text-zinc-400">4 wks</div>
+                  <div class="col-span-2"><span class="px-1.5 py-0.5 text-[10px] rounded bg-amber-500/10 text-amber-400">Tool</span></div>
+                  <div class="col-span-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span></div>
+                </div>
+                <div class="grid grid-cols-12 gap-2 text-xs py-2.5 border-b border-zinc-800/30">
+                  <div class="col-span-4 text-zinc-200">Review Exporter</div>
+                  <div class="col-span-2 text-green-400 font-mono">$4K</div>
+                  <div class="col-span-2 text-zinc-400">3 wks</div>
+                  <div class="col-span-2"><span class="px-1.5 py-0.5 text-[10px] rounded bg-blue-500/10 text-blue-400">SaaS</span></div>
+                  <div class="col-span-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-green-400"></span></div>
+                </div>
+                <div class="grid grid-cols-12 gap-2 text-xs py-2.5">
+                  <div class="col-span-4 text-zinc-200">Niche CRM</div>
+                  <div class="col-span-2 text-green-400 font-mono">$11K</div>
+                  <div class="col-span-2 text-zinc-400">6 wks</div>
+                  <div class="col-span-2"><span class="px-1.5 py-0.5 text-[10px] rounded bg-green-500/10 text-green-400">SaaS</span></div>
+                  <div class="col-span-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span></div>
+                </div>
+              </div>
+              <!-- Gradient fade -->
+              <div class="h-8 bg-gradient-to-t from-zinc-900/80 to-transparent -mt-8 relative z-10"></div>
+            </div>
+            <div class="px-4 py-2.5 border-t border-zinc-800/50 text-center">
+              <span class="text-[10px] text-zinc-500 font-mono">+ 44 more ideas inside</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Who This Is For -->
-    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-8">Sound familiar?</h2>
-        <ul class="space-y-4 text-left sm:text-center">
-          <li class="text-zinc-300">"I have 30 ideas in Notion. None of them validated."</li>
-          <li class="text-zinc-300">"I keep overbuilding. What's the minimum to charge?"</li>
-          <li class="text-zinc-300">"I launched. Got 3 likes. Now what?"</li>
-        </ul>
-        <p class="mt-10 text-lg text-zinc-400">WannaShip answers all three. No fluff.</p>
+    <!-- 4. Source Credibility Bar -->
+    <section class="px-6 py-8 border-t border-zinc-800/50 bg-zinc-900/30">
+      <div class="max-w-5xl mx-auto text-center">
+        <p class="text-sm text-zinc-400">
+          Curated from
+          <span class="inline-flex items-center gap-1.5 mx-1"><span class="w-1.5 h-1.5 rounded-full bg-orange-400 inline-block"></span><span class="text-zinc-300">IndieHackers</span></span>,
+          <span class="inline-flex items-center gap-1.5 mx-1"><span class="w-1.5 h-1.5 rounded-full bg-red-400 inline-block"></span><span class="text-zinc-300">Reddit</span></span>,
+          <span class="inline-flex items-center gap-1.5 mx-1"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block"></span><span class="text-zinc-300">TrustMRR</span></span>,
+          <span class="inline-flex items-center gap-1.5 mx-1"><span class="w-1.5 h-1.5 rounded-full bg-red-500 inline-block"></span><span class="text-zinc-300">YouTube</span></span>
+          &amp; 100+ founder interviews
+        </p>
       </div>
     </section>
 
-    <!-- Example Idea Teaser -->
+    <!-- 5. How It Works -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-14 fade-up">How it works</h2>
+        <div class="grid sm:grid-cols-3 gap-8 sm:gap-10">
+          <div class="text-center fade-up">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-400/10 border border-amber-400/20 flex items-center justify-center mb-4">
+              <span class="font-mono text-amber-400 font-semibold">1</span>
+            </div>
+            <h3 class="font-semibold text-lg">Pick an idea</h3>
+            <p class="mt-2 text-sm text-zinc-400">Browse 50 ideas sorted by revenue, build time, and category. Find one that fits your skills.</p>
+          </div>
+          <div class="text-center fade-up">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-400/10 border border-amber-400/20 flex items-center justify-center mb-4">
+              <span class="font-mono text-amber-400 font-semibold">2</span>
+            </div>
+            <h3 class="font-semibold text-lg">Follow the playbook</h3>
+            <p class="mt-2 text-sm text-zinc-400">Each idea has a build spec, tech stack, pricing strategy, and step-by-step ship checklist.</p>
+          </div>
+          <div class="text-center fade-up">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-400/10 border border-amber-400/20 flex items-center justify-center mb-4">
+              <span class="font-mono text-amber-400 font-semibold">3</span>
+            </div>
+            <h3 class="font-semibold text-lg">Find your first customers</h3>
+            <p class="mt-2 text-sm text-zinc-400">Exact subreddits, communities, cold DM scripts, and launch channels — all mapped out for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. What You Get -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-14 fade-up">Everything you need to stop guessing</h2>
+        <div class="grid sm:grid-cols-3 gap-8 sm:gap-10">
+          <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <span class="font-mono text-amber-400/80 text-sm">01</span>
+            <h3 class="mt-3 font-semibold text-lg">50 ideas with real revenue</h3>
+            <p class="mt-2 text-sm text-zinc-400">Every idea has verified MRR — from $3K to $74K. No hypotheticals. No "wouldn't it be cool if."</p>
+          </div>
+          <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <span class="font-mono text-amber-400/80 text-sm">02</span>
+            <h3 class="mt-3 font-semibold text-lg">Build guides for every skill level</h3>
+            <p class="mt-2 text-sm text-zinc-400">No-code, AI-assisted, or full-stack. Can't code? Every idea has a path that works for you.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-zinc-900/50 border border-zinc-800/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <span class="font-mono text-amber-400/80 text-sm">03</span>
+            <h3 class="mt-3 font-semibold text-lg">Exact channels to find customers</h3>
+            <p class="mt-2 text-sm text-zinc-400">37 subreddits, 22 Slack communities, 15 cold DM scripts — not vague "do marketing" advice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Product Preview — CSS Notion Mockup -->
     <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-4">One of 50. Each with this level of detail.</h2>
-        <p class="text-center text-zinc-400 mb-12">Ideas from $3K to $70K+ MRR. Full playbook: build steps, pricing, and where to find buyers.</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 fade-up">A peek inside the playbook</h2>
+        <p class="text-center text-zinc-400 mb-12 fade-up">Ideas from $3K to $74K MRR. Verified across 15+ sources.</p>
+        <div class="rounded-xl border border-amber-400/20 bg-zinc-900/80 shadow-lg shadow-amber-400/5 overflow-hidden fade-up">
+          <div class="px-5 py-3 border-b border-zinc-800/80 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500/60"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-green-500/60"></span>
+            <span class="ml-2 text-xs text-zinc-500 font-mono">WannaShip — Full Database</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="text-[11px] font-mono text-zinc-500 uppercase tracking-wider border-b border-zinc-800/50">
+                  <th class="text-left px-5 py-3 font-medium">Idea</th>
+                  <th class="text-left px-4 py-3 font-medium">Revenue</th>
+                  <th class="text-left px-4 py-3 font-medium">Build Time</th>
+                  <th class="text-left px-4 py-3 font-medium hidden sm:table-cell">Category</th>
+                  <th class="text-left px-4 py-3 font-medium hidden sm:table-cell">Freshness</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-zinc-800/30">
+                  <td class="px-5 py-3 text-zinc-200">PDF Invoice Generator</td>
+                  <td class="px-4 py-3 font-mono text-green-400">$2–5K</td>
+                  <td class="px-4 py-3 text-zinc-400">2–3 wks</td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="px-2 py-0.5 text-xs rounded bg-blue-500/10 text-blue-400">SaaS</span></td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="inline-block w-2 h-2 rounded-full bg-green-400"></span></td>
+                </tr>
+                <tr class="border-b border-zinc-800/30">
+                  <td class="px-5 py-3 text-zinc-200">AI Brand Mention Tracker</td>
+                  <td class="px-4 py-3 font-mono text-green-400">$20K</td>
+                  <td class="px-4 py-3 text-zinc-400">4–6 wks</td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="px-2 py-0.5 text-xs rounded bg-purple-500/10 text-purple-400">API</span></td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="inline-block w-2 h-2 rounded-full bg-green-400"></span></td>
+                </tr>
+                <tr class="border-b border-zinc-800/30 row-blur">
+                  <td class="px-5 py-3 text-zinc-200">LinkedIn Content Tool</td>
+                  <td class="px-4 py-3 font-mono text-green-400">$62K</td>
+                  <td class="px-4 py-3 text-zinc-400">4 wks</td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="px-2 py-0.5 text-xs rounded bg-amber-500/10 text-amber-400">Tool</span></td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="inline-block w-2 h-2 rounded-full bg-amber-400"></span></td>
+                </tr>
+                <tr class="border-b border-zinc-800/30 row-blur">
+                  <td class="px-5 py-3 text-zinc-200">Airbnb Review Exporter</td>
+                  <td class="px-4 py-3 font-mono text-green-400">$4K</td>
+                  <td class="px-4 py-3 text-zinc-400">2–3 wks</td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="px-2 py-0.5 text-xs rounded bg-blue-500/10 text-blue-400">SaaS</span></td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="inline-block w-2 h-2 rounded-full bg-green-400"></span></td>
+                </tr>
+                <tr class="row-blur">
+                  <td class="px-5 py-3 text-zinc-200">Niche Job Board</td>
+                  <td class="px-4 py-3 font-mono text-green-400">$11K</td>
+                  <td class="px-4 py-3 text-zinc-400">3–4 wks</td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="px-2 py-0.5 text-xs rounded bg-green-500/10 text-green-400">Marketplace</span></td>
+                  <td class="px-4 py-3 hidden sm:table-cell"><span class="inline-block w-2 h-2 rounded-full bg-green-400"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="h-6 bg-gradient-to-t from-zinc-900/80 to-transparent -mt-6 relative z-10"></div>
+          <div class="px-5 py-3 border-t border-zinc-800/50 text-center">
+            <span class="text-xs text-zinc-500 font-mono">+ 45 more ideas inside</span>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="https://pay.dodopayments.com/placeholder" id="cta-after-preview" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">
+            Get 50 Validated Ideas — $49
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Who This Is For — Quote / Resolution pairs -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-14 fade-up">Sound familiar?</h2>
+        <div class="space-y-8">
+          <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start fade-up">
+            <div class="flex-1 p-5 rounded-lg bg-zinc-800/30 border border-zinc-700/30">
+              <p class="text-zinc-300 italic">"I have 30 ideas in Notion. None of them validated."</p>
+            </div>
+            <div class="flex-1 p-5 rounded-lg bg-amber-400/5 border border-amber-400/20">
+              <p class="text-zinc-200">Every idea in WannaShip has verified revenue. Skip validation — it's already done.</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start fade-up">
+            <div class="flex-1 p-5 rounded-lg bg-zinc-800/30 border border-zinc-700/30">
+              <p class="text-zinc-300 italic">"I keep overbuilding. What's the minimum to charge?"</p>
+            </div>
+            <div class="flex-1 p-5 rounded-lg bg-amber-400/5 border border-amber-400/20">
+              <p class="text-zinc-200">Each playbook has the exact MVP feature list, pricing model, and tech stack. Ship lean.</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start fade-up">
+            <div class="flex-1 p-5 rounded-lg bg-zinc-800/30 border border-zinc-700/30">
+              <p class="text-zinc-300 italic">"I launched. Got 3 likes. Now what?"</p>
+            </div>
+            <div class="flex-1 p-5 rounded-lg bg-amber-400/5 border border-amber-400/20">
+              <p class="text-zinc-200">Exact subreddits, communities, and cold DM scripts to find your first paying customers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Example Ideas — 4 cards, 2x2 grid -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 fade-up">One of 50. Each with this level of detail.</h2>
+        <p class="text-center text-zinc-400 mb-12 fade-up">Full playbook: build steps, pricing, and where to find buyers.</p>
         <div class="grid sm:grid-cols-2 gap-6 sm:gap-8">
-          <div class="p-6 sm:p-8 rounded-xl border-2 border-amber-400/20 bg-zinc-900/50">
-            <h3 class="font-semibold text-xl text-amber-400/90">PDF Invoice Generator</h3>
-            <p class="mt-2 text-zinc-400">Generate branded invoices from a simple form.</p>
+          <!-- Card 1 -->
+          <div class="p-6 sm:p-8 rounded-xl border border-zinc-800/50 bg-zinc-900/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <h3 class="font-semibold text-xl text-amber-400/90">PDF Invoice Generator</h3>
+              <span class="px-2 py-0.5 text-[10px] font-mono rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">$2–5K MRR</span>
+            </div>
+            <p class="text-zinc-400">Generate branded invoices from a simple form.</p>
             <ul class="mt-6 space-y-2 text-sm text-zinc-300">
-              <li><span class="font-mono text-amber-400/70">Revenue:</span> $2–5k MRR</li>
               <li><span class="font-mono text-amber-400/70">Build time:</span> 2–3 weeks</li>
               <li><span class="font-mono text-amber-400/70">Non-tech path:</span> Carrd + Gumroad + Notion</li>
               <li><span class="font-mono text-amber-400/70">Where to sell:</span> r/freelance, freelancer Facebook groups</li>
             </ul>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-green-400"></span>
+              <span class="text-xs text-zinc-500">Fresh — low competition</span>
+            </div>
           </div>
-          <div class="p-6 sm:p-8 rounded-xl border-2 border-amber-400/20 bg-zinc-900/50">
-            <h3 class="font-semibold text-xl text-amber-400/90">AI Brand Mention Tracker</h3>
-            <p class="mt-2 text-zinc-400">Track how brands appear in ChatGPT, Perplexity, Claude responses.</p>
+          <!-- Card 2 -->
+          <div class="p-6 sm:p-8 rounded-xl border border-zinc-800/50 bg-zinc-900/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <h3 class="font-semibold text-xl text-amber-400/90">AI Brand Mention Tracker</h3>
+              <span class="px-2 py-0.5 text-[10px] font-mono rounded-full bg-green-500/10 text-green-400 border border-green-500/20">$20K MRR</span>
+            </div>
+            <p class="text-zinc-400">Track how brands appear in ChatGPT, Perplexity, Claude responses.</p>
             <ul class="mt-6 space-y-2 text-sm text-zinc-300">
-              <li><span class="font-mono text-amber-400/70">Revenue:</span> $20K MRR (verified)</li>
               <li><span class="font-mono text-amber-400/70">Build time:</span> 4–6 weeks</li>
               <li><span class="font-mono text-amber-400/70">Who pays:</span> SaaS marketing teams, agencies</li>
               <li><span class="font-mono text-amber-400/70">Where to sell:</span> Marketing Twitter, SaaS Slack, SEO "AI SEO"</li>
             </ul>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-green-400"></span>
+              <span class="text-xs text-zinc-500">Fresh — verified revenue</span>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="p-6 sm:p-8 rounded-xl border border-zinc-800/50 bg-zinc-900/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <h3 class="font-semibold text-xl text-amber-400/90">LinkedIn Content Tool</h3>
+              <span class="px-2 py-0.5 text-[10px] font-mono rounded-full bg-green-500/10 text-green-400 border border-green-500/20">$62K MRR</span>
+            </div>
+            <p class="text-zinc-400">Schedule, format, and optimize LinkedIn posts with analytics.</p>
+            <ul class="mt-6 space-y-2 text-sm text-zinc-300">
+              <li><span class="font-mono text-amber-400/70">Build time:</span> 4 weeks</li>
+              <li><span class="font-mono text-amber-400/70">Who pays:</span> Founders, solopreneurs, personal brands</li>
+              <li><span class="font-mono text-amber-400/70">Where to sell:</span> LinkedIn itself, creator communities</li>
+            </ul>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+              <span class="text-xs text-zinc-500">Competitive — high demand</span>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="p-6 sm:p-8 rounded-xl border border-zinc-800/50 bg-zinc-900/50 hover:-translate-y-1 hover:border-amber-400/40 transition-all duration-200 fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <h3 class="font-semibold text-xl text-amber-400/90">Airbnb Review Exporter</h3>
+              <span class="px-2 py-0.5 text-[10px] font-mono rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">$4K MRR</span>
+            </div>
+            <p class="text-zinc-400">Export and analyze Airbnb reviews for hosts and managers.</p>
+            <ul class="mt-6 space-y-2 text-sm text-zinc-300">
+              <li><span class="font-mono text-amber-400/70">Build time:</span> 2–3 weeks</li>
+              <li><span class="font-mono text-amber-400/70">Who pays:</span> Airbnb hosts, property managers</li>
+              <li><span class="font-mono text-amber-400/70">Where to sell:</span> r/airbnb_hosts, host Facebook groups</li>
+            </ul>
+            <div class="mt-4 flex items-center gap-2">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-green-400"></span>
+              <span class="text-xs text-zinc-500">Fresh — niche with low competition</span>
+            </div>
           </div>
         </div>
-        <p class="mt-8 text-center text-sm text-zinc-500">48 more ideas. Same depth. No filler.</p>
+        <p class="mt-8 text-center text-sm text-zinc-500">46 more ideas. Same depth. No filler.</p>
+        <div class="text-center mt-6">
+          <a href="https://pay.dodopayments.com/placeholder" id="cta-after-ideas" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">
+            Get 50 Validated Ideas — $49
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- 10. Playbook Anatomy -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 fade-up">What's inside each playbook</h2>
+        <p class="text-center text-zinc-400 mb-12 fade-up">Every idea is broken into 4 actionable parts.</p>
+        <div class="rounded-xl border border-amber-400/20 bg-zinc-900/50 overflow-hidden fade-up">
+          <div class="grid sm:grid-cols-2">
+            <div class="p-6 sm:p-8 border-b sm:border-b-0 sm:border-r border-zinc-800/50">
+              <span class="font-mono text-amber-400 text-sm font-semibold">THE IDEA</span>
+              <p class="mt-2 text-sm text-zinc-400">What it is, who pays, revenue proof, and why it works right now.</p>
+            </div>
+            <div class="p-6 sm:p-8 border-b border-zinc-800/50">
+              <span class="font-mono text-amber-400 text-sm font-semibold">THE BUILD</span>
+              <p class="mt-2 text-sm text-zinc-400">MVP features, tech stack (no-code, AI, full-stack), and realistic timeline.</p>
+            </div>
+            <div class="p-6 sm:p-8 border-b sm:border-b-0 sm:border-r border-zinc-800/50">
+              <span class="font-mono text-amber-400 text-sm font-semibold">THE SHIP</span>
+              <p class="mt-2 text-sm text-zinc-400">Pricing model, launch checklist, and what to build first vs. skip.</p>
+            </div>
+            <div class="p-6 sm:p-8">
+              <span class="font-mono text-amber-400 text-sm font-semibold">THE SELL</span>
+              <p class="mt-2 text-sm text-zinc-400">Exact subreddits, communities, cold DM scripts, and first-customer channels.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Price Anchoring — Comparison Table -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 fade-up">$49 vs. doing it yourself</h2>
+        <p class="text-center text-zinc-400 mb-12 fade-up">40+ hours of DIY research — or $49. Less than $1 per idea.</p>
+        <div class="rounded-xl border border-zinc-800/50 overflow-hidden fade-up">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-zinc-800/50">
+                <th class="text-left px-5 py-4 text-zinc-400 font-medium"></th>
+                <th class="text-left px-5 py-4 text-zinc-400 font-medium">DIY Research</th>
+                <th class="text-left px-5 py-4 text-amber-400 font-semibold highlight-col">WannaShip</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-zinc-800/30">
+                <td class="px-5 py-3 text-zinc-300">Finding ideas</td>
+                <td class="px-5 py-3 text-zinc-500">Scroll Reddit for hours</td>
+                <td class="px-5 py-3 text-zinc-200 highlight-col">50 curated, revenue-verified</td>
+              </tr>
+              <tr class="border-b border-zinc-800/30">
+                <td class="px-5 py-3 text-zinc-300">Validating</td>
+                <td class="px-5 py-3 text-zinc-500">Guess and hope</td>
+                <td class="px-5 py-3 text-zinc-200 highlight-col">Already validated with MRR proof</td>
+              </tr>
+              <tr class="border-b border-zinc-800/30">
+                <td class="px-5 py-3 text-zinc-300">Build planning</td>
+                <td class="px-5 py-3 text-zinc-500">Figure it out yourself</td>
+                <td class="px-5 py-3 text-zinc-200 highlight-col">MVP spec, stack, timeline included</td>
+              </tr>
+              <tr class="border-b border-zinc-800/30">
+                <td class="px-5 py-3 text-zinc-300">Finding customers</td>
+                <td class="px-5 py-3 text-zinc-500">"Just do marketing"</td>
+                <td class="px-5 py-3 text-zinc-200 highlight-col">37 subreddits, 22 Slacks, 15 DM scripts</td>
+              </tr>
+              <tr class="border-b border-zinc-800/30">
+                <td class="px-5 py-3 text-zinc-300">Time cost</td>
+                <td class="px-5 py-3 text-zinc-500">40+ hours</td>
+                <td class="px-5 py-3 text-zinc-200 highlight-col">Instant access</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 text-zinc-300">Dollar cost</td>
+                <td class="px-5 py-3 text-zinc-500">$400+ of your time</td>
+                <td class="px-5 py-3 text-amber-400 font-semibold highlight-col">$49 one-time</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-6 text-center text-sm text-zinc-500">Courses: $200–500. Coaching: $150/hr. This: $49 once.</p>
+      </div>
+    </section>
+
+    <!-- 12. FAQ — Expanded to 7 -->
     <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
       <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">Questions</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 fade-up">Questions</h2>
         <dl class="space-y-8">
-          <div>
+          <div class="fade-up">
             <dt class="font-semibold text-zinc-100">Do I need to know how to code?</dt>
             <dd class="mt-2 text-zinc-400">No. Every idea includes a no-code path (Carrd, Notion, Gumroad, etc.). Roughly 30% of builders use only no-code tools.</dd>
           </div>
-          <div>
+          <div class="fade-up">
             <dt class="font-semibold text-zinc-100">What if I've never built anything?</dt>
             <dd class="mt-2 text-zinc-400">The playbooks are step-by-step. Start with the simplest ideas (e.g. PDF Invoice Generator) and follow the non-technical or AI-assisted path. Many ideas ship in 2–4 weeks.</dd>
           </div>
-          <div>
+          <div class="fade-up">
             <dt class="font-semibold text-zinc-100">Is this a subscription?</dt>
             <dd class="mt-2 text-zinc-400">No. $49 one-time. You get the full database and keep it forever. No recurring charges.</dd>
           </div>
-          <div>
+          <div class="fade-up">
+            <dt class="font-semibold text-zinc-100">Why $49?</dt>
+            <dd class="mt-2 text-zinc-400">This represents 40+ hours of founder research condensed into one playbook — $400+ worth of time. At less than $1 per idea, it's the cheapest validated research you'll find.</dd>
+          </div>
+          <div class="fade-up">
+            <dt class="font-semibold text-zinc-100">Are these ideas saturated?</dt>
+            <dd class="mt-2 text-zinc-400">Each idea has a freshness rating. Some have competition — that's actually proof of demand. The playbook shows you how to differentiate and find underserved niches within each idea.</dd>
+          </div>
+          <div class="fade-up">
+            <dt class="font-semibold text-zinc-100">I can find ideas for free online.</dt>
+            <dd class="mt-2 text-zinc-400">Ideas are free — you're right. But the build spec, pricing strategy, exact customer channels, and cold DM scripts aren't. That's the difference between an idea and a playbook.</dd>
+          </div>
+          <div class="fade-up">
             <dt class="font-semibold text-zinc-100">How is this different from IndieHackers or Starter Story?</dt>
             <dd class="mt-2 text-zinc-400">Those are interviews and stories. WannaShip is actionable: each idea has a build spec (MVP features, stack, time), ship checklist, and sell playbook with exact channels and scripts. You get the what, how, and where — not just the story.</dd>
           </div>
@@ -193,27 +550,51 @@
       </div>
     </section>
 
-    <!-- Pricing CTA -->
-    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
-      <div class="max-w-xl mx-auto text-center">
-        <p class="font-mono text-amber-400/90 text-sm tracking-wider uppercase mb-4">One-time. No subscription.</p>
-        <p class="text-4xl sm:text-5xl font-bold">$49</p>
-        <p class="mt-2 text-zinc-400">If one idea pays off, you've made 100x back.</p>
-        <!-- Replace href with your Dodo Payments checkout link -->
-        <a href="https://pay.dodopayments.com/placeholder" id="cta-footer" title="Instant access after payment" class="inline-flex items-center justify-center mt-8 px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition-colors duration-200">
-          Get the 50 Ideas — $49
-        </a>
+    <!-- 13. Founder Note -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50">
+      <div class="max-w-2xl mx-auto text-center fade-up">
+        <p class="font-mono text-amber-400/80 text-sm tracking-wider uppercase mb-6">From the founder</p>
+        <blockquote class="text-lg sm:text-xl text-zinc-300 leading-relaxed">
+          "I built this because I was you — 30+ ideas in Notion, zero validated, two abandoned projects. I researched 200+ founders so you can skip to building. Every idea in here has real revenue behind it. No hypotheticals."
+        </blockquote>
+        <p class="mt-6 text-sm text-zinc-500">— Maker of WannaShip.fyi</p>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 14. Final CTA — Pricing card -->
+    <section class="px-6 py-20 sm:py-28 border-t border-zinc-800/50 bg-zinc-900/30">
+      <div class="max-w-xl mx-auto text-center">
+        <div class="rounded-xl border border-amber-400/20 bg-zinc-900/50 p-8 sm:p-10 fade-up">
+          <p class="font-mono text-amber-400/90 text-sm tracking-wider uppercase mb-4">Launch price</p>
+          <p class="text-5xl sm:text-6xl font-bold">$49</p>
+          <p class="mt-2 text-zinc-400">One-time. No subscription. Yours forever.</p>
+          <ul class="mt-6 space-y-2 text-sm text-zinc-300 text-left max-w-xs mx-auto">
+            <li class="flex items-center gap-2"><span class="text-amber-400">&#10003;</span> 50 revenue-verified startup ideas</li>
+            <li class="flex items-center gap-2"><span class="text-amber-400">&#10003;</span> Full build playbook for each idea</li>
+            <li class="flex items-center gap-2"><span class="text-amber-400">&#10003;</span> Pricing strategy + launch checklist</li>
+            <li class="flex items-center gap-2"><span class="text-amber-400">&#10003;</span> Exact customer channels + DM scripts</li>
+            <li class="flex items-center gap-2"><span class="text-amber-400">&#10003;</span> Instant delivery via email</li>
+          </ul>
+          <a href="https://pay.dodopayments.com/placeholder" id="cta-final" class="inline-flex items-center justify-center mt-8 px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200 w-full sm:w-auto">
+            Get 50 Validated Ideas — $49
+          </a>
+          <p class="mt-4 text-sm text-zinc-500">Less than $1 per idea. Less than one coffee.</p>
+          <p class="mt-2 text-sm text-zinc-500">If one idea earns $2K/mo — that's a 4,000% return.</p>
+        </div>
+        <p class="mt-8 text-sm text-zinc-500">Your next idea is already inside. How many more weekends on Reddit?</p>
+      </div>
+    </section>
+
+    <!-- 15. Footer -->
     <footer class="px-6 py-8 pb-20 sm:pb-8 border-t border-zinc-800/50">
       <p class="text-center text-sm text-zinc-500">wannaship.fyi — from idea to first dollar</p>
     </footer>
   </main>
+
   <script>
+    // Sticky CTA — show after hero scrolls out
     (function() {
-      var hero = document.querySelector('section');
+      var hero = document.getElementById('hero');
       var sticky = document.getElementById('sticky-cta');
       if (!hero || !sticky) return;
       var observer = new IntersectionObserver(function(entries) {
@@ -222,6 +603,21 @@
         });
       }, { threshold: 0, rootMargin: '-100px 0px 0px 0px' });
       observer.observe(hero);
+    })();
+
+    // Scroll fade-in animations
+    (function() {
+      var els = document.querySelectorAll('.fade-up');
+      if (!els.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function(el) { observer.observe(el); });
     })();
   </script>
 </body>
