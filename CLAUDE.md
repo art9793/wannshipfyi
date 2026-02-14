@@ -13,7 +13,7 @@ Zero-dependency static site deployed on GitHub Pages. No build step — push to 
 - **`index.html`** — Conversion-optimized landing page (~600 lines). Uses Tailwind CSS via CDN with inline config, Space Grotesk + JetBrains Mono from Google Fonts, and vanilla JS (~15 lines) for IntersectionObserver animations and sticky CTA.
 - **`thank-you.html`** — Post-purchase confirmation with social share buttons (Twitter/LinkedIn) and testimonial request. Has `noindex` meta tag.
 - **`styles.css`** — Custom keyframe animations (`float`, `fadeUp`), `.fade-up`/`.is-visible` scroll reveal classes, `.row-blur` for product preview curiosity gap, `.highlight-col` for comparison table.
-- **`wannaship-complete-master-document.md`** — Internal product spec (gitignored). Contains the actual product details, all 20 documented ideas, pricing rationale, and persona research. **Always cross-reference this file when editing landing page copy to avoid over-promising.**
+- **`wannaship-complete-master-document.md`** — Internal product spec (gitignored). Contains 20 reference example ideas (for quality calibration), pricing rationale, and persona research. The product has 50 ideas total, sourced fresh from Starter Story. **Always cross-reference this file when editing landing page copy to avoid over-promising.**
 
 ## Key Conventions
 
@@ -32,6 +32,16 @@ Zero-dependency static site deployed on GitHub Pages. No build step — push to 
 Landing page copy must match what the product actually delivers. The master document is the source of truth. Key constraints:
 - Not all 50 ideas will have verified MRR — some are "validated patterns" with demand signals but no revenue proof. Use "research-backed" not "revenue-verified" when referring to all ideas collectively.
 - Specific numbers (subreddit counts, community counts, DM script counts) should only be used if they match the actual product contents.
+
+## Notion Database Build
+
+The product sold on this landing page is a Notion database of 50 startup idea playbooks. The database is built separately using a pipeline documented in `workflow-notion-db-build.md`.
+
+- **Status:** 5 of 50 playbooks published (calibration batch). See `PROJECT-STATUS.md` for current state.
+- **Pipeline:** Ideas sourced from Starter Story → playbooks generated → humanized → Notion markdown → uploaded
+- **Staging files:** All intermediate data lives in `staging/` (see `staging/README.md`)
+- The master document's 20 ideas are reference examples for quality calibration — all 50 database ideas are sourced fresh from Starter Story.
+- Landing page copy must match what's actually in the database. Cross-reference before changing any product claims.
 
 ## SEO
 
