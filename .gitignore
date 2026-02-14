@@ -1,3 +1,10 @@
 # Internal docs — keep out of public repo
 wannaship-complete-master-document.md
 workflow-notion-db-build.md
+PROJECT-STATUS.md
+staging/
+
+# AI tooling — local configuration, not for public
+.agents/
+.claude/
+.cursor/
