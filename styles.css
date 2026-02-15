@@ -114,7 +114,8 @@ body {
   color: #fbbf24;
   text-decoration-color: #fbbf24;
 }
-.blog-prose a.inline-flex {
+.blog-prose a.inline-flex,
+.blog-prose a.block {
   color: inherit;
   text-decoration: none;
 }
