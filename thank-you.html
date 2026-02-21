@@ -61,5 +61,18 @@
     </div>
 
   </main>
+  <script>
+    // Track purchase conversion in Umami
+    if (typeof umami !== 'undefined') {
+      umami.track('purchase', { revenue: 29, currency: 'USD' });
+    } else {
+      // Umami may load async — retry once after a short delay
+      window.addEventListener('load', function() {
+        if (typeof umami !== 'undefined') {
+          umami.track('purchase', { revenue: 29, currency: 'USD' });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
