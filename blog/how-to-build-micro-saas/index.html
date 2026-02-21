@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to build a micro SaaS in 2-4 weeks. Step-by-step framework covering idea selection, MVP, launch, and first customers. Build SaaS fast.">
+  <meta name="theme-color" content="#09090b">
+  <meta property="og:title" content="How to Build a Micro-SaaS in 2-4 Weeks">
+  <meta property="og:description" content="Learn how to build a micro SaaS in 2-4 weeks. Step-by-step framework covering idea selection, MVP, launch, and first customers. Build SaaS fast.">
+  <meta property="og:image" content="https://wannaship.fyi/assets/og-image.png">
+  <meta property="og:url" content="https://wannaship.fyi/blog/how-to-build-micro-saas/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Build a Micro-SaaS in 2-4 Weeks">
+  <meta name="twitter:description" content="Learn how to build a micro SaaS in 2-4 weeks. Step-by-step framework covering idea selection, MVP, launch, and first customers. Build SaaS fast.">
+  <meta name="twitter:image" content="https://wannaship.fyi/assets/og-image.png">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f2122dba-6ff0-45e2-8445-00141d65f9ae"></script>
+  <title>How to Build a Micro-SaaS in 2-4 Weeks | WannaShip.fyi</title>
+  <link rel="canonical" href="https://wannaship.fyi/blog/how-to-build-micro-saas/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Build a Micro-SaaS in 2-4 Weeks",
+    "description": "Learn how to build a micro SaaS in 2-4 weeks. Step-by-step framework covering idea selection, MVP, launch, and first customers. Build SaaS fast.",
+    "url": "https://wannaship.fyi/blog/how-to-build-micro-saas/",
+    "image": "https://wannaship.fyi/assets/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "name": "WannaShip.fyi",
+      "url": "https://wannaship.fyi"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "WannaShip.fyi",
+      "url": "https://wannaship.fyi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wannaship.fyi/assets/favicon-64x64.png"
+      }
+    },
+    "datePublished": "2026-02-21",
+    "dateModified": "2026-02-21",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://wannaship.fyi/blog/how-to-build-micro-saas/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wannaship.fyi/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wannaship.fyi/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "How to Build a Micro-SaaS", "item": "https://wannaship.fyi/blog/how-to-build-micro-saas/" }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64x64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180x180.png">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://cloud.umami.is">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            accent: '#f59e0b',
+            'accent-hover': '#d97706',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-display antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-semibold text-zinc-100 hover:text-amber-400 transition-colors">
+        <img src="/assets/favicon-32x32.png" alt="WannaShip logo" width="28" height="28" class="rounded">
+        WannaShip.fyi
+      </a>
+      <a href="https://checkout.dodopayments.com/buy/pdt_0NY8eop2ZlHBkDdATJQmb?quantity=1&redirect_url=https://wannaship.fyi%2Fthank-you" data-umami-event="cta-blog-header" class="text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors">Get the Playbook — $49</a>
+    </div>
+  </header>
+
+  <main class="min-h-screen pt-24 pb-20">
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-3xl mx-auto px-6 mb-8">
+      <nav class="text-sm text-zinc-500">
+        <a href="/" class="hover:text-amber-400 transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/blog/" class="hover:text-amber-400 transition-colors">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-zinc-300">How to Build a Micro-SaaS</span>
+      </nav>
+    </div>
+
+    <!-- Article Header -->
+    <div class="max-w-3xl mx-auto px-6 mb-12">
+      <span class="inline-block px-2 py-0.5 text-[10px] font-mono rounded-full bg-green-500/10 text-green-400 border border-green-500/20 mb-4">Building</span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">How to Build a Micro-SaaS in 2-4 Weeks</h1>
+      <p class="mt-4 text-lg text-zinc-400 leading-relaxed">A week-by-week framework for going from zero to a launched micro-SaaS with paying customers. No fluff, no theory &mdash; just the build.</p>
+      <div class="mt-4 flex items-center gap-4 text-sm text-zinc-500">
+        <span class="font-mono">13 min read</span>
+        <span>&#183;</span>
+        <span>Feb 21, 2026</span>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="max-w-3xl mx-auto px-6 mb-12">
+      <div class="p-6 rounded-xl border border-zinc-800/50 bg-zinc-900/50">
+        <p class="text-sm font-semibold text-zinc-300 mb-4 font-mono uppercase tracking-wider">In this article</p>
+        <nav class="space-y-2 text-sm">
+          <a href="#why-2-4-weeks" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Why 2-4 Weeks Is the Right Timeframe</a>
+          <a href="#week-0" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Week 0: Pick the Right Idea</a>
+          <a href="#week-1" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Week 1: Validate Before You Build</a>
+          <a href="#week-2" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Week 2: Build Your MVP</a>
+          <a href="#week-3" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Week 3: Launch and Get First Users</a>
+          <a href="#week-4" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Week 4: Convert Users to Customers</a>
+          <a href="#tech-stack" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">The Tech Stack That Actually Works</a>
+          <a href="#mistakes" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Mistakes That Kill Micro-SaaS Projects</a>
+          <a href="#action-plan" class="block text-zinc-400 hover:text-amber-400 transition-colors pl-3 border-l-2 border-zinc-800 hover:border-amber-400 toc-link">Your 28-Day Action Plan</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Article Body -->
+    <article class="max-w-3xl mx-auto px-6 blog-prose">
+
+      <p>Most micro-SaaS projects die in the planning phase. Someone spends three months choosing a tech stack, six weeks designing a logo, and another month debating pricing tiers &mdash; then never ships anything.</p>
+
+      <p>The builders who actually reach $1K, $5K, $10K MRR share one thing in common: they shipped fast. They picked an idea from a list of <a href="/blog/micro-saas-ideas/">micro-SaaS ideas with real revenue data</a>, built a stripped-down version in a few weeks, and got it in front of real users before it felt ready.</p>
+
+      <p>This guide is the framework they followed. Whether you write code, use <a href="/blog/no-code-saas-ideas/">no-code tools</a>, or build with AI assistants, the process is the same: pick, validate, build, launch, convert. Four weeks. One feature. Real customers.</p>
+
+      <p>No 47-step business plan. No "complete guide to everything." Just the week-by-week playbook for building a micro-SaaS that makes money.</p>
+
+      <!-- H2: Why 2-4 Weeks -->
+      <h2 id="why-2-4-weeks">Why 2-4 Weeks Is the Right Timeframe</h2>
+
+      <p>Two to four weeks sounds aggressive. It is. That's the point.</p>
+
+      <p>The number one killer of side projects isn't bad ideas or missing features. It's losing momentum. Every week you spend planning without building, your motivation drops. After a month of "preparation," most people quietly abandon the project and move on to the next shiny idea.</p>
+
+      <p>A tight deadline forces you to make decisions instead of debating them. It forces you to cut features instead of adding them. And it forces you to ship something imperfect &mdash; which is exactly what you need to do, because your first version will always be wrong in ways you can't predict.</p>
+
+      <h3>What "done" looks like at week 4</h3>
+
+      <p>Set your expectations correctly. At the end of four weeks, you should have:</p>
+
+      <ul>
+        <li>A working product that solves one specific problem</li>
+        <li>A way for users to sign up and pay</li>
+        <li>5-15 real users (some paying, some free)</li>
+        <li>Direct feedback from those users on what to build next</li>
+        <li>Data on whether this idea has legs or needs to be killed</li>
+      </ul>
+
+      <p>You should not have: a polished UI, a full feature set, a marketing website with 12 pages, or an investor pitch deck. Those come later. If they come at all.</p>
+
+      <p>The math is simple. Spending four months to build a product nobody wants costs you four months. Spending four weeks to discover nobody wants it costs you four weeks. Both feel painful, but one leaves you with 12 extra weeks to try something else.</p>
+
+      <!-- H2: Week 0 — Pick the Right Idea -->
+      <h2 id="week-0">Week 0: Pick the Right Idea</h2>
+
+      <p>This is the week before you build anything. Spend 2-3 days maximum on this step. If you're still choosing an idea after a week, you're procrastinating.</p>
+
+      <h3>Three filters for a good micro-SaaS idea</h3>
+
+      <p>Run every idea through these three filters. If it passes all three, it's good enough to build. If it fails any of them, move on.</p>
+
+      <p><strong>Filter 1: Can you reach 100 potential customers in 30 days?</strong> You need a direct channel to people who might pay. That means a subreddit you're active in, a Slack community you belong to, a Twitter/X following in the niche, or an email list. If you can't name 3 specific places where your target customer hangs out, the idea is too broad.</p>
+
+      <p><strong>Filter 2: Are people already paying for a worse version?</strong> Competition is a good sign. It means demand exists. Look for products where users are paying $10-50/month but complaining about specific things &mdash; too complicated, missing a key feature, terrible UX, overpriced for what they actually use. That complaint is your opening.</p>
+
+      <p><strong>Filter 3: Can you build a useful v1 in two weeks?</strong> If the core feature requires machine learning models, complex integrations, or regulatory compliance, it's not a micro-SaaS &mdash; it's a startup. A good micro-SaaS solves a narrow problem with a narrow solution. One feature, done well.</p>
+
+      <h3>Where to find ideas that pass all three filters</h3>
+
+      <p>Browse communities where your target users complain. Reddit threads starting with "Is there a tool that..." are gold. So are "I wish [Product X] could..." tweets. Look at what successful indie hackers are building on platforms like Indie Hackers, Product Hunt, and MicroConf. Study products in the $1-10K MRR range &mdash; not the unicorns, but the small profitable tools that fly under the radar.</p>
+
+      <p>Don't spend more than 48 hours on idea selection. The best idea is the one you actually build, not the one that looks perfect on paper. Pricing strategy matters too, but that comes in Week 4. For now, just pick and move.</p>
+
+      <!-- CTA 1 -->
+      <div class="my-12 p-8 rounded-xl border border-amber-400/20 bg-zinc-900/50 text-center">
+        <p class="text-xl font-semibold mb-2">Skip weeks of idea research</p>
+        <p class="text-zinc-400 mb-6">WannaShip gives you 50 validated micro-SaaS ideas with revenue data, build playbooks, and customer channels. Pick one and start building today.</p>
+        <a href="https://checkout.dodopayments.com/buy/pdt_0NY8eop2ZlHBkDdATJQmb?quantity=1&redirect_url=https://wannaship.fyi%2Fthank-you" data-umami-event="cta-blog-build-micro-saas" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">
+          Get 50 Validated Ideas — $49
+        </a>
+      </div>
+
+      <!-- H2: Week 1 — Validate -->
+      <h2 id="week-1">Week 1: Validate Before You Build</h2>
+
+      <p>You have an idea. Before you touch a single line of code or drag a single no-code block, you need to validate that real people will pay for this.</p>
+
+      <p>Validation isn't a survey. It's not asking your friends "would you use this?" (they'll say yes to be polite). Real validation means getting strangers to take a concrete action &mdash; signing up for a waitlist, pre-ordering, or handing you money.</p>
+
+      <h3>The 48-hour validation sprint</h3>
+
+      <p><strong>Day 1: Build a landing page.</strong> One page. Five sections maximum: headline, problem, solution, price, and a call-to-action button. Use Carrd ($19/year), a simple HTML page, or even a Notion page with a payment link. The goal isn't beauty. It's clarity. Can someone read this page in 60 seconds and understand what you're selling?</p>
+
+      <p><strong>Day 2: Put it in front of 50 people.</strong> Post in the 3 communities you identified in Week 0. Send 10 cold DMs to people who match your ideal customer. Share it on Twitter/X with a clear "building this, would you pay $X/month?" framing. Track clicks on your CTA button.</p>
+
+      <h3>What good validation looks like</h3>
+
+      <ul>
+        <li><strong>Strong signal:</strong> 3+ people say "I'd pay for this right now" or actually pre-pay</li>
+        <li><strong>Moderate signal:</strong> 10+ email signups from 50 people seeing the page (20% conversion)</li>
+        <li><strong>Weak signal:</strong> Lots of "cool idea!" comments but zero signups or payments</li>
+        <li><strong>Kill signal:</strong> Nobody engages at all, or everyone says "I'd use it if it were free"</li>
+      </ul>
+
+      <p>If you get a strong or moderate signal, move to Week 2. If you get a weak or kill signal, go back to Week 0 and pick a different idea. This is why you only spent 48 hours on validation &mdash; you can afford to cycle through 2-3 ideas before committing to a build.</p>
+
+      <h3>Talk to 5 potential customers</h3>
+
+      <p>While your landing page is collecting data, reach out to 5 people who fit your target customer profile. Not to sell. To learn. Ask three questions:</p>
+
+      <ol>
+        <li>How do you currently solve this problem? (Understand existing behavior)</li>
+        <li>What's the most annoying part of your current solution? (Find the pain)</li>
+        <li>If a tool could fix that one annoyance, what would you pay for it? (Anchor pricing)</li>
+      </ol>
+
+      <p>Five conversations will teach you more about what to build than a month of competitor analysis. Write down exact phrases people use &mdash; you'll use them as copywriting for your landing page later.</p>
+
+      <!-- H2: Week 2 — Build -->
+      <h2 id="week-2">Week 2: Build Your MVP</h2>
+
+      <p>You have validation. People want this thing. Now you build it &mdash; and you build only the thing they want.</p>
+
+      <h3>The one-feature rule</h3>
+
+      <p>Your MVP does one thing. Not three things. Not "the core features." One thing.</p>
+
+      <p>If you're building a social media scheduler, your MVP schedules posts to one platform. If you're building an invoice tool, your MVP generates a PDF invoice from a form. If you're building a CRM, your MVP lets you add contacts and see them in a list.</p>
+
+      <p>Everything else is a distraction. Settings pages, onboarding flows, admin dashboards, analytics, team features, integrations &mdash; all of that comes after you have paying users who ask for it.</p>
+
+      <h3>The 7-day build checklist</h3>
+
+      <ul>
+        <li><strong>Day 1-2:</strong> Core feature. The one thing your product does. Get it working, even if it's ugly.</li>
+        <li><strong>Day 3:</strong> User auth. Let people create accounts and log in. Use a pre-built auth solution (Clerk, Supabase Auth, Firebase Auth, or Softr's built-in auth for no-code).</li>
+        <li><strong>Day 4:</strong> Payments. Connect Stripe, LemonSqueezy, or your payment processor. One plan, one price. No free tier yet.</li>
+        <li><strong>Day 5:</strong> Landing page upgrade. Take your validation landing page and update it with screenshots of the real product. Add a "Sign Up" button that goes to your auth flow.</li>
+        <li><strong>Day 6:</strong> Bug fixes and basic polish. Fix the three worst UX issues. Make sure the critical path (signup → use feature → pay) works without errors.</li>
+        <li><strong>Day 7:</strong> Deploy. Put it on a real URL. If you're using a <a href="/blog/no-code-saas-ideas/">no-code stack</a>, this is already handled. If you're coding, deploy to Vercel, Railway, or Render.</li>
+      </ul>
+
+      <p>That's it. Seven days. One feature, working auth, working payments, live on the internet. If this feels rushed, it is. The rough edges are a feature, not a bug &mdash; they signal to early users that this is new and their feedback will shape the product.</p>
+
+      <!-- CTA 2 -->
+      <div class="my-12 p-8 rounded-xl border border-amber-400/20 bg-zinc-900/50 text-center">
+        <p class="text-xl font-semibold mb-2">Every WannaShip idea comes with a build playbook</p>
+        <p class="text-zinc-400 mb-6">MVP features, tech stack recommendations, and step-by-step build instructions &mdash; so you don't waste Week 2 guessing what to build.</p>
+        <a href="https://checkout.dodopayments.com/buy/pdt_0NY8eop2ZlHBkDdATJQmb?quantity=1&redirect_url=https://wannaship.fyi%2Fthank-you" data-umami-event="cta-blog-build-micro-saas" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">
+          Get 50 Validated Ideas — $49
+        </a>
+      </div>
+
+      <!-- H2: Week 3 — Launch -->
+      <h2 id="week-3">Week 3: Launch and Get First Users</h2>
+
+      <p>Your product exists. It works. Now you need people to use it.</p>
+
+      <p>First-time founders overcomplicate launches. They wait for a Product Hunt feature, plan a big reveal, build hype campaigns. For a micro-SaaS, none of that matters. Your "launch" is just getting 10-20 people to try your product in the first week.</p>
+
+      <h3>The launch day checklist</h3>
+
+      <ul>
+        <li><strong>Post in 3 communities.</strong> Go back to the communities from your validation sprint. This time, post the actual product. Frame it as "I built this because [problem]. Here's what it does. Would love feedback."</li>
+        <li><strong>Send 20 cold DMs.</strong> Find people on Twitter/X, LinkedIn, or Reddit who have recently complained about the problem you solve. Send a short, personal message: "Hey, saw you mentioned [problem]. I just built [product] that does [solution]. Want to try it for free this week?"</li>
+        <li><strong>Email your validation list.</strong> Everyone who signed up during Week 1 gets an email: "It's live. Here's your login. Tell me what you think."</li>
+        <li><strong>Tell everyone you know.</strong> Not to sell, but to ask for introductions. "I built a tool that helps [target customer] do [thing]. Know anyone who might find it useful?"</li>
+      </ul>
+
+      <h3>The DM strategy that actually works</h3>
+
+      <p>Cold DMs get a bad reputation because most people do them wrong. They send a sales pitch. Instead, send a question.</p>
+
+      <p>Template that works: <em>"Hey [name], I noticed you [specific thing they posted about the problem]. I've been building a tool to fix that. Would you be open to trying it for free and giving me honest feedback? Totally understand if not."</em></p>
+
+      <p>This works because it's specific (you referenced their exact situation), low-pressure (free trial, okay to say no), and asks for feedback rather than money. Roughly 20-30% of people will respond positively. That means 20 DMs should get you 4-6 trial users.</p>
+
+      <h3>Success benchmarks for week 3</h3>
+
+      <ul>
+        <li><strong>Good:</strong> 10+ signups, 3+ people actively using the product, 1+ paying customer</li>
+        <li><strong>Okay:</strong> 5-10 signups, some engagement, zero paying customers but positive feedback</li>
+        <li><strong>Concerning:</strong> Less than 5 signups despite outreach to 50+ people</li>
+      </ul>
+
+      <p>If you're in the "concerning" zone, the problem is usually positioning (people don't understand what it does) or channel fit (you're reaching the wrong people). Revisit your landing page copy and your target communities before adding features.</p>
+
+      <!-- H2: Week 4 — Convert -->
+      <h2 id="week-4">Week 4: Convert Users to Customers</h2>
+
+      <p>You have users. Some are paying. Most are on a free trial or using a beta version. Week 4 is about turning usage into revenue.</p>
+
+      <h3>The feedback loop</h3>
+
+      <p>Message every active user. Ask two questions:</p>
+
+      <ol>
+        <li>"What's the one thing you wish this product did differently?"</li>
+        <li>"Would you pay $X/month for this? If not, what's missing?"</li>
+      </ol>
+
+      <p>Build the top-requested feature. Only the top one. Ship it within 3-4 days. Then message those users back: "You asked for [feature]. It's live." This loop &mdash; listen, build, deliver &mdash; is what separates micro-SaaS products that grow from ones that stall.</p>
+
+      <h3>Retention before growth</h3>
+
+      <p>Do not try to get 1,000 users in month one. Try to keep the 10 you have. If your first 10 users stick around, pay, and tell one friend each, you'll reach 100 users faster than any marketing campaign. If your first 10 users churn, getting 100 more just means 100 more churned users.</p>
+
+      <p>Focus on daily or weekly active usage. Are people coming back? If not, your product isn't solving the problem well enough yet. Fix that before spending a dollar on marketing.</p>
+
+      <h3>Pricing that works for micro-SaaS</h3>
+
+      <p>Keep it simple. One plan. Monthly billing. $15-49/month for most B2B micro-SaaS products, $5-15/month for B2C. You can add a free tier later, but starting with paid-only filters for people who are serious about solving their problem.</p>
+
+      <p>Don't undercharge. A common mistake is pricing at $5/month because it "feels accessible." At $5/month, you need 1,000 customers to hit $5K MRR. At $29/month, you need 172. The second path is dramatically easier. Price based on the value you deliver, not your discomfort with asking for money.</p>
+
+      <p>Annual plans can wait. Offer them after you've proven monthly retention. A 20% annual discount ($29/month or $279/year) is the standard approach once you're ready.</p>
+
+      <!-- H2: Tech Stack -->
+      <h2 id="tech-stack">The Tech Stack That Actually Works</h2>
+
+      <p>The stack matters less than you think. Pick tools you already know and ship fast. Here's what works for three types of builders.</p>
+
+      <h3>For developers</h3>
+
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Layer</th>
+              <th>Recommended</th>
+              <th>Alternative</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Frontend</td>
+              <td>Next.js / SvelteKit</td>
+              <td>Remix, Astro</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>Supabase (Postgres + Auth)</td>
+              <td>Firebase, PocketBase</td>
+            </tr>
+            <tr>
+              <td>Payments</td>
+              <td>Stripe</td>
+              <td>LemonSqueezy</td>
+            </tr>
+            <tr>
+              <td>Hosting</td>
+              <td>Vercel / Railway</td>
+              <td>Render, Fly.io</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>Resend</td>
+              <td>Postmark, SendGrid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>For no-code builders</h3>
+
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Layer</th>
+              <th>Recommended</th>
+              <th>Alternative</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>App builder</td>
+              <td>Bubble / Softr</td>
+              <td>Glide, Webflow</td>
+            </tr>
+            <tr>
+              <td>Database</td>
+              <td>Airtable</td>
+              <td>Google Sheets, Notion</td>
+            </tr>
+            <tr>
+              <td>Automation</td>
+              <td>Zapier / Make</td>
+              <td>n8n</td>
+            </tr>
+            <tr>
+              <td>Payments</td>
+              <td>Stripe</td>
+              <td>Gumroad, LemonSqueezy</td>
+            </tr>
+            <tr>
+              <td>Auth</td>
+              <td>Built-in (Softr/Bubble)</td>
+              <td>Memberstack</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>For a deeper look at <a href="/blog/no-code-saas-ideas/">no-code SaaS ideas and stacks</a>, see our full guide with 10 buildable products and tool recommendations.</p>
+
+      <h3>For AI-assisted builders</h3>
+
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Layer</th>
+              <th>Recommended</th>
+              <th>Alternative</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Code generation</td>
+              <td>Cursor / Claude Code</td>
+              <td>GitHub Copilot, Windsurf</td>
+            </tr>
+            <tr>
+              <td>App scaffold</td>
+              <td>v0 + Next.js</td>
+              <td>Bolt, Lovable</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>Supabase</td>
+              <td>Firebase, Convex</td>
+            </tr>
+            <tr>
+              <td>Hosting</td>
+              <td>Vercel</td>
+              <td>Netlify, Railway</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>AI-assisted building is the fastest path in 2026. You can go from prompt to working app in a weekend if you know how to direct the AI. The trade-off is that AI-generated code can be messy, so plan for a cleanup pass before you scale.</p>
+
+      <!-- H2: Mistakes -->
+      <h2 id="mistakes">Mistakes That Kill Micro-SaaS Projects</h2>
+
+      <p>These five mistakes account for most micro-SaaS failures. Every one of them feels productive while you're doing it, which is what makes them dangerous.</p>
+
+      <p><strong>1. Building features nobody asked for.</strong> You get an idea for a cool feature at 2am. You spend three days building it. Nobody uses it. Meanwhile, the one feature your existing users actually need remains unbuilt. Rule: only build features that at least 3 users have independently requested.</p>
+
+      <p><strong>2. Perfecting the UI before getting users.</strong> Nobody cares about your gradient buttons when they can't figure out how to use the core feature. Ship ugly, get feedback, then polish. Some of the most successful micro-SaaS products look mediocre &mdash; their users stay because the tool solves the problem, not because it looks pretty.</p>
+
+      <p><strong>3. Adding a free tier too early.</strong> Free users cost you server resources, support time, and emotional energy. They rarely convert to paid. Start paid-only. Once you have 50+ paying customers and understand your unit economics, you can experiment with a free plan to drive growth.</p>
+
+      <p><strong>4. Chasing new users instead of retaining existing ones.</strong> If your churn rate is 15% monthly, getting 100 new users per month means you'll plateau at ~670 users. Fix churn first. A 5% monthly churn rate with the same 100 new users gets you to 2,000. Retention is a multiplier; acquisition is addition.</p>
+
+      <p><strong>5. Comparing yourself to funded startups.</strong> That competitor with the beautiful product, the marketing team, and the 50 integrations raised $3M to build it. You're one person with a laptop. Compare yourself to where they were at your stage, not where they are now. Every big SaaS started as a janky MVP someone shipped on a weekend.</p>
+
+      <!-- H2: Action Plan -->
+      <h2 id="action-plan">Your 28-Day Action Plan</h2>
+
+      <p>Here's the complete timeline compressed into one view. Pin this somewhere you'll see it daily.</p>
+
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Focus</th>
+              <th>Key deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-mono text-green-400">Week 0</td>
+              <td>Idea selection</td>
+              <td>One idea that passes all 3 filters</td>
+            </tr>
+            <tr>
+              <td class="font-mono text-green-400">Week 1</td>
+              <td>Validation</td>
+              <td>Landing page live, 50+ people exposed, 5 conversations done</td>
+            </tr>
+            <tr>
+              <td class="font-mono text-green-400">Week 2</td>
+              <td>Build MVP</td>
+              <td>Core feature + auth + payments, deployed to production</td>
+            </tr>
+            <tr>
+              <td class="font-mono text-green-400">Week 3</td>
+              <td>Launch</td>
+              <td>10+ signups, 3+ active users, 1+ paying customer</td>
+            </tr>
+            <tr>
+              <td class="font-mono text-green-400">Week 4</td>
+              <td>Convert &amp; retain</td>
+              <td>Top feedback feature shipped, 3+ paying customers</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Four weeks. One product. Real customers giving you real money.</p>
+
+      <p>The hardest part isn't any single step. It's starting. It's picking an idea when you could keep browsing <a href="/blog/micro-saas-ideas/">micro-SaaS ideas</a> for another month. It's building when you could keep researching. It's launching when you could keep polishing.</p>
+
+      <p>The builders who make it to $5K, $10K, $50K MRR all have the same origin story. They picked something, built it fast, shipped it rough, and iterated based on real feedback. None of them had the perfect idea. None of them had the perfect product. They had momentum, and momentum compounds.</p>
+
+      <p>Pick your idea. Start building. The next four weeks could change everything.</p>
+
+      <!-- CTA 3 -->
+      <div class="my-12 p-8 rounded-xl border border-amber-400/20 bg-zinc-900/50 text-center">
+        <p class="text-xl font-semibold mb-2">Stop researching. Start building.</p>
+        <p class="text-zinc-400 mb-6">WannaShip gives you 50 validated micro-SaaS ideas &mdash; each with a build playbook, pricing strategy, and exact channels to find your first customers. Pick one and start your 28-day sprint today.</p>
+        <a href="https://checkout.dodopayments.com/buy/pdt_0NY8eop2ZlHBkDdATJQmb?quantity=1&redirect_url=https://wannaship.fyi%2Fthank-you" data-umami-event="cta-blog-build-micro-saas" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-amber-400/20 rounded-lg transition-all duration-200">
+          Get 50 Validated Ideas — $49
+        </a>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-zinc-800/50">
+        <h3 class="text-lg font-semibold text-zinc-200 mb-6">Keep Reading</h3>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <a href="/blog/micro-saas-ideas/" class="group block p-6 rounded-xl border border-zinc-800/50 bg-zinc-900/50 hover:border-amber-400/40 hover:-translate-y-1 transition-all duration-200">
+            <span class="inline-block px-2 py-0.5 text-[10px] font-mono rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-4">Pillar</span>
+            <h2 class="font-semibold text-lg text-zinc-100 group-hover:text-amber-400 transition-colors leading-snug">15 Micro-SaaS Ideas That Actually Make Money in 2026</h2>
+            <p class="mt-3 text-sm text-zinc-400 line-clamp-3">Validated micro-SaaS ideas with real revenue data — from $3K to $70K MRR. Each one includes build time, skill level, and a path to first customers.</p>
+            <span class="mt-4 inline-block text-xs text-zinc-500 font-mono">15 min read</span>
+          </a>
+          <a href="/blog/no-code-saas-ideas/" class="group block p-6 rounded-xl border border-zinc-800/50 bg-zinc-900/50 hover:border-amber-400/40 hover:-translate-y-1 transition-all duration-200">
+            <span class="inline-block px-2 py-0.5 text-[10px] font-mono rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">No-Code</span>
+            <h2 class="font-semibold text-lg text-zinc-100 group-hover:text-amber-400 transition-colors leading-snug">No-Code SaaS Ideas: 10 Products You Can Build Without Writing Code</h2>
+            <p class="mt-3 text-sm text-zinc-400 line-clamp-3">10 SaaS products you can build and launch with no-code tools like Bubble, Softr, and Zapier. Includes revenue potential and a 3-week launch timeline.</p>
+            <span class="mt-4 inline-block text-xs text-zinc-500 font-mono">12 min read</span>
+          </a>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-6 py-8 border-t border-zinc-800/50">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-zinc-500">wannaship.fyi — from idea to first dollar</p>
+      <nav class="flex items-center gap-6 text-sm text-zinc-500">
+        <a href="/" class="hover:text-amber-400 transition-colors">Home</a>
+        <a href="/blog/" class="hover:text-amber-400 transition-colors">Blog</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- TOC active highlight on scroll -->
+  <script>
+    (function() {
+      var headings = document.querySelectorAll('h2[id]');
+      var links = document.querySelectorAll('.toc-link');
+      if (!headings.length || !links.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            links.forEach(function(link) { link.classList.remove('active'); });
+            var active = document.querySelector('.toc-link[href="#' + entry.target.id + '"]');
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 });
+      headings.forEach(function(h) { observer.observe(h); });
+    })();
+  </script>
+
+</body>
+</html>
