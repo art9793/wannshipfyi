@@ -8,3 +8,4 @@ staging/
 .agents/
 .claude/
 .cursor/
+skills-lock.json
