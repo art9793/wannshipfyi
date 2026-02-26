@@ -8,9 +8,15 @@
   </url>
   <url>
     <loc>https://wannaship.fyi/blog/</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wannaship.fyi/blog/validate-startup-idea/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wannaship.fyi/blog/micro-saas-ideas/</loc>
