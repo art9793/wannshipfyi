@@ -2,15 +2,10 @@
 staging/
 PROJECT-STATUS.md
 
-# Business docs (product spec, pipeline spec, SEO strategy, marketing context)
-.claude/business/
+# Claude Code — all local tooling config (agents, skills, rules, business docs)
+.claude/
 
 # AI tooling — local/personal config
 .agents/
 .cursor/
 skills-lock.json
-
-# Claude Code — selective .claude/ ignoring
-# Committed: CLAUDE.md, settings.json, rules/, agents/, skills/
-# Gitignored: settings.local.json, business/
-.claude/settings.local.json
