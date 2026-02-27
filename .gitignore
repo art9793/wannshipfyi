@@ -1,8 +1,9 @@
 # Internal docs — keep out of public repo
-wannaship-complete-master-document.md
-workflow-notion-db-build.md
-PROJECT-STATUS.md
 staging/
+PROJECT-STATUS.md
+
+# Business docs (product spec, pipeline spec, SEO strategy, marketing context)
+.claude/business/
 
 # AI tooling — local/personal config
 .agents/
@@ -10,6 +11,6 @@ staging/
 skills-lock.json
 
 # Claude Code — selective .claude/ ignoring
-# Committed: CLAUDE.md, settings.json, rules/, agents/, skills/, product-marketing-context.md
-# Gitignored: settings.local.json (personal overrides)
+# Committed: CLAUDE.md, settings.json, rules/, agents/, skills/
+# Gitignored: settings.local.json, business/
 .claude/settings.local.json
