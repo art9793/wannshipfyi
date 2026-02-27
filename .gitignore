@@ -4,8 +4,12 @@ workflow-notion-db-build.md
 PROJECT-STATUS.md
 staging/
 
-# AI tooling — local configuration, not for public
+# AI tooling — local/personal config
 .agents/
-.claude/
 .cursor/
 skills-lock.json
+
+# Claude Code — selective .claude/ ignoring
+# Committed: CLAUDE.md, settings.json, rules/, agents/, skills/, product-marketing-context.md
+# Gitignored: settings.local.json (personal overrides)
+.claude/settings.local.json
