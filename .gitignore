@@ -1,6 +1,7 @@
 # Internal docs — keep out of public repo
 staging/
 PROJECT-STATUS.md
+trustmrr-pipeline-plan.md
 
 # Claude Code — all local tooling config (agents, skills, rules, business docs)
 .claude/
