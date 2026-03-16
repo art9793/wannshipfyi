@@ -1,6 +1,6 @@
 # WannaShip.fyi
 
-50 validated startup ideas with step-by-step playbooks — from idea to first dollar.
+100 validated startup ideas with step-by-step playbooks — from idea to first dollar.
 
 **[wannaship.fyi](https://wannaship.fyi)**
 
@@ -10,7 +10,7 @@ A curated Notion database of research-backed startup ideas, each with a complete
 
 ## What's in the database?
 
-- 50 ideas across SaaS, marketplaces, developer tools, and more
+- 100 ideas across SaaS, marketplaces, developer tools, and more
 - Pre-built Notion views: Quick Wins, High Revenue Potential, Solo-Friendly
 - Each playbook includes: problem analysis, target audience, revenue model, tech stack suggestions, and first 30 days action plan
 
